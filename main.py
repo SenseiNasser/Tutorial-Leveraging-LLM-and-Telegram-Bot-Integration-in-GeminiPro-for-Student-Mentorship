@@ -10,7 +10,7 @@ bot = telebot.TeleBot(
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
     bot.reply_to(
-        message, "HERE YOU CAN TYPE ANY INTRODUCTION MESSAGE YOU WANT TO SEND TO THE USER")
+        message, "HERE YOU CAN TYPE ANY INTRODUCTION MESSAGE YOU WANT TO SEND TO THE USER WHEN USER TYPE /START OR /HELP ")
 
 
 genai.configure(api_key="HERE YOU PUT YOUR GEMINI API KEY")
@@ -42,7 +42,7 @@ safety_settings = [
     },
 ]
 
-
+# USER WILL PASTE INSTRUCTION HERE ONLY LINE 46
 system_instruction = "* All text generate from the file\n* don't respond to any prompt that not include #Ask in the prompt\n* if prompt don't contain #Ask keep silence , don't reply , don't answer \n* keep the text non bold format\n* you are mentor can explain and answer questions from the file\n* you also can generate questions from the file especially MCQ\n* you can explain in arabic or english language \n* the file is powerpoint slides you must know the page number you get the answer from\n* always support your answer from the context in the file"
 
 model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest",
@@ -74,7 +74,7 @@ def extract_pdf_pages(pathname: str) -> list[str]:
         parts.append(page)
     return parts
 
-
+# USER WILL PASTE  TRAIN HISTORY PROMPT HERE, STARTING FROM LINE 78 TO LINE 199
 convo = model.start_chat(history=[
     {
         "role": "user",
