@@ -83,6 +83,12 @@ C.**Install Packages**
 ```
 pip install pyTelegramBotAPI google-generativeai
 ```
+D. **Create 2 .py files in vc code  main.py and gemini.py**
+
+<img width="221" alt="Screenshot 2024-04-26 005201" src="https://github.com/SenseiNasser/Tutorial-Leveraging-LLM-and-Telegram-Bot-Integration-in-GeminiPro-for-Student-Mentorship/assets/65749356/4924aa2d-9ea3-4438-a92e-1cd1c40e3398">
+
+
+
 
 
 ## Step 3: Sign-in Google Ai Studio & train your model
@@ -109,11 +115,66 @@ E.**Copy the python code**
 
 <img width="628" alt="Screenshot 2024-04-26 005117" src="https://github.com/SenseiNasser/Tutorial-Leveraging-LLM-and-Telegram-Bot-Integration-in-GeminiPro-for-Student-Mentorship/assets/65749356/2a95289d-b8d0-4843-a566-0f14ea24c9fc">
 
+> paste your code in gemini.py
+
+F. **Copy the main.py file in this project and paste it in your main.py**
+
+<img width="690" alt="Screenshot 2024-04-26 011817" src="https://github.com/SenseiNasser/Tutorial-Leveraging-LLM-and-Telegram-Bot-Integration-in-GeminiPro-for-Student-Mentorship/assets/65749356/b21dcf03-8177-41bf-8440-36e29d64cef3">
 
 
-## Step 4: copy the train model code & generate your API Gemini key
 
 
 
-C. **Go to get API key**
-D. **Create API key**
+
+
+
+
+## Step 4: Create API Gemini key
+
+A. **Save your work in google ai studio**
+
+<img width="91" alt="Screenshot 2024-04-26 012224" src="https://github.com/SenseiNasser/Tutorial-Leveraging-LLM-and-Telegram-Bot-Integration-in-GeminiPro-for-Student-Mentorship/assets/65749356/5eb2a797-c3fa-4763-8b4a-82b6f40187d3">
+
+B. **Go to get API key**
+
+<img width="214" alt="Screenshot 2024-04-25 225920" src="https://github.com/SenseiNasser/Tutorial-Leveraging-LLM-and-Telegram-Bot-Integration-in-GeminiPro-for-Student-Mentorship/assets/65749356/068dee98-fb2d-4877-9e0a-47f73d31bce1">
+
+
+C. **Create API key**
+
+<img width="588" alt="Screenshot 2024-04-25 225944" src="https://github.com/SenseiNasser/Tutorial-Leveraging-LLM-and-Telegram-Bot-Integration-in-GeminiPro-for-Student-Mentorship/assets/65749356/9910c8a5-a2f0-42b8-92ac-506f286aab3a">
+
+
+## Step 5: Edit the main.py before run it
+A. **Put your key from botfather in line 7**
+
+<img width="440" alt="Screenshot 2024-04-26 012619" src="https://github.com/SenseiNasser/Tutorial-Leveraging-LLM-and-Telegram-Bot-Integration-in-GeminiPro-for-Student-Mentorship/assets/65749356/c7a350b0-4a03-49dc-afa3-7763e26dac28">
+
+B. **Put your key from gemini in line 16**
+
+
+<img width="415" alt="Screenshot 2024-04-26 012911" src="https://github.com/SenseiNasser/Tutorial-Leveraging-LLM-and-Telegram-Bot-Integration-in-GeminiPro-for-Student-Mentorship/assets/65749356/63d23888-2dbb-4ed1-9cd3-a74cbd1f76ec">
+
+
+C. **Optional: type anything you want here in line 13**
+> When you chat with your bot by pressing /start or /help you get the message you type here.
+
+<img width="597" alt="Screenshot 2024-04-26 013123" src="https://github.com/SenseiNasser/Tutorial-Leveraging-LLM-and-Telegram-Bot-Integration-in-GeminiPro-for-Student-Mentorship/assets/65749356/3307edfa-92a0-4e15-b4f3-f288b6de3319">
+
+D. **Copy Your System instroctutions Line in Gemini.py and replace it in main.py in line 46**
+<img width="639" alt="Screenshot 2024-04-26 013600" src="https://github.com/SenseiNasser/Tutorial-Leveraging-LLM-and-Telegram-Bot-Integration-in-GeminiPro-for-Student-Mentorship/assets/65749356/6811f4db-2b51-4b66-acd4-310f744eaf71">
+
+E. **Copy Your training prompt history in Gemini.py and paste it in main.py replace line 78 to 199**
+> Note: Code start with this ```convo = model.start_chat(history=[```
+> it is long code based on the your training history
+
+<img width="624" alt="Screenshot 2024-04-26 014459" src="https://github.com/SenseiNasser/Tutorial-Leveraging-LLM-and-Telegram-Bot-Integration-in-GeminiPro-for-Student-Mentorship/assets/65749356/fa60cf6e-40a0-4784-a964-24c5ae9ffcf5">
+
+F. **Save your work in main.py**
+> in vs code CTRL+S
+
+## Step 6: **Run the bot**
+> in vs code terminal type:
+```python main.py```
+
+> Go to your bot and start chatting 
