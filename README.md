@@ -6,6 +6,7 @@ This project is a step-by-step tutorial designed for students seeking mentorship
 Leveraging GeminiPro, it integrates a Large Language Model (LLM) and Telegram bot to provide personalized assistance.
 Tailored for student needs, it offers intuitive guidance, explanations, and resources, revolutionizing textbook learning.
 
+[!NOTE]
 # Brief [!NOTE]
 As a fellow senior student in Computer Science and owner of study groups on Telegram, I understand the challenges students face in grasping complex material.
 Recognizing the need for personalized assistance, I created this tutorial.
